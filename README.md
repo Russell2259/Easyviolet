@@ -1,5 +1,5 @@
 <h1 align="center">Easyviolet</h1>
-<p align="center">An easy way to deploy <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">ultraviolet</a>.</p>
+<p align="center">An easy way to use <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">ultraviolet</a>. Easyviolet allows you to setup and configure ultraviolet using one line of code and still have ultraviolet's full functionality and customizability.</p>
 
 <h2 align="center">Installation</h2>
 
