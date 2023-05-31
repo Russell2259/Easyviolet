@@ -1,0 +1,27 @@
+{
+  "name": "easyviolet",
+  "version": "1.0.0",
+  "description": "An easy way to use ultraviolet",
+  "main": "lib/index.js",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Russell2259/Easyviolet.git"
+  },
+  "author": "Russell2259",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Russell2259/Easyviolet/issues"
+  },
+  "homepage": "https://github.com/Russell2259/Easyviolet#readme",
+  "dependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.11",
+    "@tomphttp/bare-server-node": "^1.2.6"
+  }
+}
