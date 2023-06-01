@@ -68,6 +68,30 @@ ultraviolet.httpServer(server); // Requires the server object provided by the no
 ultraviolet.handleRequest(req, res, next/* Optional */);
 ````
 
+<h2 align="center">Client Side API</h2>
+Easyviolet also provides a client side javascript api for easy use and configuration.
+
+Link the script
+````html
+<script src="/{your prefix}/ev.bundle.js"></script>
+
+<!--The default prefix is uv-->
+<script src="/uv/ev.bundle.js"></script>
+````
+
+Use the api in your code
+````javascript
+// Register the ultraviolet service worker (is done automatically when the script is linked)
+Easyviolet.registerSW();
+
+// Encode a url
+Easyviolet.getProxiedUrl('https://example.com');
+
+// Other parameters
+Easyviolet.scriptsLoaded // Returns true|false
+Easyviolet.config // The configuration passed down from the node process in json format
+````
+
 <h2 align="center">Credits</h2>
 
 <p>The two primary libraries <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">ultraviolet</a> and <a href="https://github.com/tomphttp/bare-server-node">bare server node</a> were not developed by me and easyviolet was only intended to be an easier way to use the ultraviolet proxy.</p>
