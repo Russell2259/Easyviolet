@@ -82,7 +82,10 @@ Link the script
 Use the api in your code
 ````javascript
 // Register the ultraviolet service worker (is done automatically when the script is linked)
-Easyviolet.registerSW();
+await Easyviolet.registerSW();
+
+// Use than and catch
+Easyviolet.registerSW().then(() => console.log('yay!')).catch(e => console.log('An error occurred: ', e));
 
 // Encode a url
 Easyviolet.getProxiedUrl('https://example.com');
