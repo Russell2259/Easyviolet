@@ -36,7 +36,7 @@ new Easyviolet({
     prefix: 'service/', // The path that ultraviolet will serve proxied content to
     bare: '/bare/', // The path that the bare server will be run on
     codec: 'xor', // The codec that ultraviolet will encode the queries with
-    uv: { // Allows you to change the javascript files that ultraviolet will use
+    uv: { // Allows you to change the javascript files that ultraviolet will use. I would not recomend changing these as it could mess up your ultraviolet instance.
         handler: 'uv.handler.js',
         client: 'uv.client.js',
         bundle: 'uv.bundle.js',
