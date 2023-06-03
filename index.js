@@ -1,4 +1,4 @@
-import Easyviolet from 'easyviolet';
+import Easyviolet from './lib/index.js';
 import http from 'node:http';
 
 const server = http.createServer();
