@@ -90,9 +90,6 @@ Easyviolet.registerSW().then(() => console.log('yay!')).catch(e => console.log('
 // Encode a url
 Easyviolet.getProxiedUrl('https://example.com');
 
-// Change/set the configuration
-await Easyviolet.setConfig(config); // Use a configuration similar to the one used to start easyviolet
-
 // Other parameters
 Easyviolet.scriptsLoaded; // Returns true|false
 Easyviolet.config; // The configuration passed down from the node process in json format
