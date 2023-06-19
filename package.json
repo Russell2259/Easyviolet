@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Russell2259/Easyviolet#readme",
   "dependencies": {
     "@titaniumnetwork-dev/ultraviolet": "^1.0.11",
-    "@tomphttp/bare-server-node": "^1.2.6"
+    "@tomphttp/bare-server-node": "^2.0.0"
   }
 }
