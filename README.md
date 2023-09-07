@@ -35,14 +35,7 @@ new Easyviolet({
     uvPrefix: '/uv/', // The prefix that ultraviolet will run on
     prefix: 'service/', // The path that ultraviolet will serve proxied content to
     bare: '/bare/', // The path that the bare server will be run on
-    codec: 'xor', // The codec that ultraviolet will encode the queries with
-    uv: { // Allows you to change the javascript files that ultraviolet will use. I would not recomend changing these as it could mess up your ultraviolet instance.
-        handler: 'uv.handler.js',
-        client: 'uv.client.js',
-        bundle: 'uv.bundle.js',
-        config: 'uv.config.js',
-        sw: 'uv.sw.js'
-    },
+    codec: 'xor',
     server: server // The server object provided by the node:http module
 });
 ```
@@ -56,7 +49,7 @@ const ultraviolet = new Easyviolet();
 // Use an express.js server with easyviolet
 const app = express();
 
-app.use(ultraviolet.express(app)); // You need to have the app object as a parameter
+ultraviolet.httpServer(app.listen(80));
 
 // Check if easyviolet needs a path
 ultraviolet.requiresRoute(req); // Requires the request object provided by the express and node:http modules
